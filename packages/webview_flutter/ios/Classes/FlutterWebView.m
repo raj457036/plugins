@@ -377,6 +377,8 @@
     default:
       NSLog(@"webview_flutter: unknown auto media playback policy: %@", policy);
   }
+  configuration.allowsInlineMediaPlayback = true;
+  
 }
 
 - (bool)loadRequest:(NSDictionary<NSString*, id>*)request {
